@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Recipes</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background-color: #e67e22;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+    .main-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    .sidebar {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .sidebar h2 {
+      margin-bottom: 10px;
+      color: #e67e22;
+    }
+
+    .sidebar ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .sidebar li {
+      margin-bottom: 8px;
+    }
+    footer {
+      background-color: #e67e22;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    @media (max-width: 900px) {
+      .main-layout {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+
+      .main-layout {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>My Favorite Recipes</h1>
+    <p>"Simple and delicious homemade dishes and dessert that i usually cooked"</p>
+  </header>
+
+  <nav>
+    <a href="#">Recipes</a>
+  </nav>
+
+  <section class="main-layout">
+    <aside class="sidebar">
+      <h2>Cake Recipe</h2>
+      <ul>
+        <li>2 cups all-purpose flour</li>
+        <li>1 cup sugar</li>
+        <li>2 eggs</li>
+        <li>1 cup milk</li>
+        <li>1 tsp baking powder</li>
+        <li>1 tsp vanilla extract</li>
+      </ul>
+    </aside>
+    <aside class="sidebar">
+      <h2>Spaghetti Recipe</h2>
+      <ul>
+        <li>500g spaghetti pasta</li>
+        <li>1 cup tomato sauce</li>
+        <li>250g ground meat</li>
+        <li>1 onion (chopped)</li>
+        <li>3 cloves garlic</li>
+        <li>Salt and pepper</li>
+        <li>1 bar cheese</li>
+      </ul>
+    </aside>
+    <aside class="sidebar">
+      <h2>Valenciana Recipe</h2>
+      <ul>
+        <li>3 cups glutinous rice</li>
+        <li>Chicken meet</li>
+        <li>Bell peppers</li>
+        <li>Green peas</li>
+        <li>Hotdogs</li>
+        <li>Raisins/pasas</li>
+        <li>Coconut milk (but optional only)
+        <li>Turmeric or annatto or food color (egg yellow)</li>
+      </ul>
+    </aside>
+
+  </section>
+
+  <footer>
+    <p>"Cooking is a blend of artistry, love, and sensory experience,best <br>
+       approached with passion rather than strict rules.Renowned chefs and <br>
+       food lovers emphasize that it is an act of care,a way to create <br>
+       happiness, and a medium to express creativity."</p>
+  </footer>
+
+</body>
+</html>
